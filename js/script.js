@@ -46,8 +46,20 @@ createApp({
         }).catch ((error)=>{
           console.log(error);
         })
+    },
+    modTask(i){
+      const data= new FormData();
+        data.append("modTask", i);
 
-    }
+        axios.post(this.apiUrl, data)
+        .then((response)=>{
+        this.todolist = response.data;
+
+        }).catch ((error)=>{
+          console.log(error);
+        })
+    },
+
 
    
   },

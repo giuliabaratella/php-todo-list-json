@@ -1,11 +1,15 @@
 :root{
     --primary-color: #9943df;
-    --secondary-color: #ff7b00;
+    --secondary-color: #f57341;
+    --tertiary-color: #ffc348;
+    --color-light: #ffffff;
 }
 body {
-    background-image: url(../img/halloween-pattern.jpg);
-    background-repeat: repeat;
+    background-image: url(../img/geometric-bg.jpg);
+    background-size: cover;
     font-family: 'Playpen Sans', cursive;
+    height: 100vh;
+    width: 100vw;
 }
 .container {
     background-color: rgba(255, 255, 255, 0.8);
@@ -17,7 +21,7 @@ header h1 {
     color: var(--primary-color);
 }
 .fa-circle-xmark {
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     font-size: 2em;
 }
 .fa-circle-xmark:hover {
@@ -35,9 +39,10 @@ header h1 {
     color: var(--secondary-color);
 }
 .btn {
-    background-color: var(--secondary-color); 
+    background-color: var(--primary-color); 
+    color: var(--color-light);
 }
 .btn:hover {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     color: var(--secondary-color);
 }

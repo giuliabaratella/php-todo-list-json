@@ -22,6 +22,16 @@ if (isset($_POST["removeTask"])) {
     file_put_contents('data/data.json', json_encode($list));
 }
 
+if (isset($_POST["modTask"])) {
+    $taskToMod = $_POST["modTask"];
+    if ($list[$taskToMod]['done']) {
+        $list[$taskToMod]['done'] = false;
+    } else {
+        $list[$taskToMod]['done'] = true;
+    }
+    file_put_contents('data/data.json', json_encode($list));
+}
+
 
 
 header('Content-Type: application/json');
