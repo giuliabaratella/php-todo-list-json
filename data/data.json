@@ -1,0 +1,19 @@
+[
+    {
+    "text": "Do laudry",
+    "done":false
+    },
+    {
+    "text": "Watch film",
+    "done":true
+    },
+    {
+    "text": "Buy some coffee",
+    "done":false
+    },
+    {
+    "text": "Call Lorenzo",
+    "done":true
+    }
+    
+]

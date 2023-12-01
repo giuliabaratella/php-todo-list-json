@@ -1,0 +1,43 @@
+:root{
+    --primary-color: #9943df;
+    --secondary-color: #ff7b00;
+}
+body {
+    background-image: url(../img/halloween-pattern.jpg);
+    background-repeat: repeat;
+    font-family: 'Playpen Sans', cursive;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+}
+header h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4em;
+    color: var(--primary-color);
+}
+.fa-circle-xmark {
+    color: var(--primary-color);
+    font-size: 2em;
+}
+.fa-circle-xmark:hover {
+    color: var(--secondary-color);
+}
+.todo-remove, .todo-text{
+    cursor: pointer;
+}
+.done {
+    text-decoration: line-through;
+}
+.msg {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3em;
+    color: var(--secondary-color);
+}
+.btn {
+    background-color: var(--secondary-color); 
+}
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
