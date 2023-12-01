@@ -35,15 +35,14 @@
             <main class="pb-5">
                 <div class="card">
                     <ul class="list-group">
-                        <!-- <li v-for="(task,index) in tasks"
+                        <li v-for="(task,index) in todolist"
                             class="list-group-item list-group-item-action d-flex justify-content-between">
-                            <span class="todo-text" :class="{'done' : task.done}"
-                                @click="task.done =!task.done">{{task.text}}</span>
-                            <span class="todo-remove" @click="removeTask(index)">
+                            <span class="todo-text">{{task.text}}</span>
+                            <!-- <span class="todo-remove" @click="removeTask(index)">
                                 <i class="fa-solid fa-circle-xmark"></i>
-                            </span>
+                            </span> -->
 
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
                 <!-- <div class="msg text-center py-5">Your list is empty!</div> -->
