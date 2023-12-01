@@ -28,7 +28,7 @@
             <header class="text-center py-5">
                 <h1>To Do List</h1>
                 <div class="d-flex justify-content-center column-gap-3 align-content-center align-items-center">
-                    <input type="text" class="form-control w-75" v-model="newText">
+                    <input type="text" class="form-control w-75" v-model="newText" @keyup.enter="addTask">
                     <button class="btn text-uppercase fw-bold" @click="addTask">Add new task</button>
                 </div>
             </header>
@@ -38,9 +38,9 @@
                         <li v-for="(task,index) in todolist"
                             class="list-group-item list-group-item-action d-flex justify-content-between">
                             <span class="todo-text">{{task.text}}</span>
-                            <!-- <span class="todo-remove" @click="removeTask(index)">
+                            <span class="todo-remove" @click="removeTask(index)">
                                 <i class="fa-solid fa-circle-xmark"></i>
-                            </span> -->
+                            </span>
 
                         </li>
                     </ul>

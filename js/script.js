@@ -27,14 +27,28 @@ createApp({
         axios.post(this.apiUrl, data)
         .then((response)=>{
         this.todolist = response.data;
+        this.newText= '';
 
         }).catch ((error)=>{
           console.log(error);
         })
       }
-      
+
+    },
+    removeTask(i){
+      const data= new FormData();
+        data.append("removeTask", i);
+
+        axios.post(this.apiUrl, data)
+        .then((response)=>{
+        this.todolist = response.data;
+
+        }).catch ((error)=>{
+          console.log(error);
+        })
 
     }
+
    
   },
 

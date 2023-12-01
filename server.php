@@ -16,6 +16,12 @@ if (isset($_POST["newTask"])) {
     file_put_contents('data/data.json', json_encode($list));
 }
 
+if (isset($_POST["removeTask"])) {
+    $taskToDelete = $_POST["removeTask"];
+    array_splice($list, $taskToDelete, 1);
+    file_put_contents('data/data.json', json_encode($list));
+}
+
 
 
 header('Content-Type: application/json');
