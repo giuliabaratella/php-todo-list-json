@@ -29,7 +29,7 @@
                 <h1>To Do List</h1>
                 <div class="d-flex justify-content-center column-gap-3 align-content-center align-items-center">
                     <input type="text" class="form-control w-75" v-model="newText">
-                    <button class="btn text-uppercase fw-bold">Add new task</button>
+                    <button class="btn text-uppercase fw-bold" @click="addTask">Add new task</button>
                 </div>
             </header>
             <main class="pb-5">

@@ -19,6 +19,22 @@ createApp({
       })
 
     },
+    addTask(){
+      if(this.newText !== ''){
+        const data= new FormData();
+        data.append("newTask", this.newText);
+
+        axios.post(this.apiUrl, data)
+        .then((response)=>{
+        this.todolist = response.data;
+
+        }).catch ((error)=>{
+          console.log(error);
+        })
+      }
+      
+
+    }
    
   },
 

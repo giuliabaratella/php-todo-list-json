@@ -7,6 +7,14 @@ $filecontent = file_get_contents("data/data.json");
 $list = json_decode($filecontent, true);
 // var_dump($list);
 
+if (isset($_POST["newTask"])) {
+    $newTask = [
+        "text" => $_POST["newTask"],
+        "done" => false
+    ];
+    $list[] = $newTask;
+    file_put_contents('data/data.json', json_encode($list));
+}
 
 
 
